@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="http://localhost:8181/horizon/horizon.js"></script>
+    <script>
+      var horizon = Horizon({host: 'localhost:8181'});
+      horizon.onReady(function() {
+        document.querySelector('h1').innerHTML = 'App works!'
+      });
+      horizon.connect();
+    </script>
+  </head>
+  <body>
+   <marquee><h1></h1></marquee>
+  </body>
+</html>
